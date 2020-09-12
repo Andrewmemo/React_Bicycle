@@ -18,3 +18,34 @@
 .rentedButton button {
   padding: 11px 20px;
 }
+
+@media screen and (max-width: 900px) {
+  .rentedRow {
+    padding-left: 0px;
+    height: inherit;
+    line-height: inherit;
+  }
+
+  .headerRentedRowP,
+  .headerRentedRowP span {
+    font-size: 25px;
+  }
+
+  .rentedButton {
+    margin-top: 5px;
+  }
+
+  .rentedButton button {
+    padding: 10px 127px;
+  }
+
+  .rentedText {
+    margin-top: 10px;
+    font-size: 12px;
+    text-align: center;
+  }
+
+  .rentedButton {
+    font-size: 12px;
+  }
+}

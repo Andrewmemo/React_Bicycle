@@ -23,3 +23,31 @@
   padding-left: 40px;
   border: 1px solid #e0e0e0;
 }
+
+@media screen and (max-width: 900px) {
+  .availableText {
+    font-size: 10px;
+  }
+
+  .headerAvailableRowP,
+  .headerAvailableRowP span {
+    font-size: 25px;
+  }
+
+  .avaiableRow {
+    padding-left: 0px;
+    text-align: center;
+  }
+
+  .deleteButton button {
+    padding: 5px 9px;
+  }
+
+  .rentButton button {
+    padding: 5px 10px;
+  }
+
+  .availableButton {
+    font-size: 12px;
+  }
+}

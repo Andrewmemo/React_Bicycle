@@ -24,3 +24,38 @@
   text-align: center;
   font-size: 15px;
 }
+
+/* @media screen and (max-width: 1000px) {
+  .createButton button {
+    padding: 0px 0px;
+  }
+
+  .rentAlert {
+    font-size: 10px;
+  }
+
+  .createButton button {
+    font-size: 16px;
+  }
+} */
+
+@media screen and (max-width: 900px) {
+  .headerBicycle {
+    margin: 35px 0px;
+    font-size: 35px;
+    text-align: center;
+  }
+
+  .headerCreateRowP,
+  .headerCreateRowP span {
+    font-size: 25px;
+  }
+  .inputCreateRow {
+    padding: 5px;
+    padding-left: 0px;
+  }
+
+  .createButton button {
+    padding: 10px 127px;
+  }
+}

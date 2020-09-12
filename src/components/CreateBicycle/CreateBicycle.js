@@ -124,7 +124,7 @@ const CreateBicycle = ({
     <React.Fragment>
       <div className="row headerCreateRow">
         <div className="col-12">
-          <p className="h3">
+          <p className="h3 headerCreateRowP">
             <span
               role="img"
               aria-label="moneyFace"
@@ -138,7 +138,7 @@ const CreateBicycle = ({
         </div>
       </div>
       <div className="row inputCreateRow">
-        <div className="col-4">
+        <div className="col-lg-4">
           <div className="form-group">
             <label htmlFor="BikeName">Bike name</label>
             <input
@@ -153,7 +153,7 @@ const CreateBicycle = ({
             )}
           </div>
         </div>
-        <div className="col-4">
+        <div className="col-lg-4">
           <div className="form-group">
             <label htmlFor="BikeType">Bike type</label>
             <select
@@ -168,7 +168,7 @@ const CreateBicycle = ({
             </select>
           </div>
         </div>
-        <div className="col-2">
+        <div className="col-lg-2">
           <div className="form-group">
             <label htmlFor="RentPrice">Rent Price</label>
             <input
@@ -185,14 +185,14 @@ const CreateBicycle = ({
             )}
           </div>
         </div>
-        <div className="col-2 createButton">
+        <div className="col-lg-2 createButton">
           <div className="form-group">
             <label htmlFor="RentPrice"> </label>
             <div>
               <button
                 onClick={onClickHandler}
                 type="button"
-                className="btn btn-success"
+                className="btn btn-success createButton"
               >
                 Submit rent
               </button>

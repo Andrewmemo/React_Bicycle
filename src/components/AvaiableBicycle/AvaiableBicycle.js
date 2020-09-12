@@ -103,7 +103,7 @@ const AvaiableBicycle = ({
     <React.Fragment>
       <div className="row headerAvaiableRow ">
         <div className="col-12">
-          <p className="h3">
+          <p className="h3 headerAvailableRowP">
             <span
               role="img"
               aria-label="bicycleEmoji"
@@ -120,39 +120,37 @@ const AvaiableBicycle = ({
         currentBicycles.map((bicycle) => (
           <React.Fragment key={bicycle.id}>
             {!bicycle.rented && (
-              <div>
-                <div className="row bg-white avaiableRow">
-                  <div className="col-8">
-                    {bicycle.name} / {bicycle.type} / ${bicycle.rentPrice}{" "}
-                  </div>
-                  <div className="col-2 rentButton">
-                    <div className="form-group">
-                      <div>
-                        <button
-                          type="button"
-                          className="btn btn-primary"
-                          onClick={() => {
-                            onClickRentHandler(bicycle);
-                          }}
-                        >
-                          Rent
-                        </button>
-                      </div>
+              <div className="row bg-white avaiableRow">
+                <div className="col-lg-8 col-6 availableText">
+                  {bicycle.name} / {bicycle.type} / ${bicycle.rentPrice}{" "}
+                </div>
+                <div className="col-lg-2 col-3 rentButton">
+                  <div className="form-group">
+                    <div>
+                      <button
+                        type="button"
+                        className="btn btn-primary availableButton"
+                        onClick={() => {
+                          onClickRentHandler(bicycle);
+                        }}
+                      >
+                        Rent
+                      </button>
                     </div>
                   </div>
-                  <div className="col-2 deleteButton">
-                    <div className="form-group">
-                      <div>
-                        <button
-                          type="button"
-                          className="btn btn-danger"
-                          onClick={() => {
-                            onClickDeleteHendler(bicycle);
-                          }}
-                        >
-                          Delete
-                        </button>
-                      </div>
+                </div>
+                <div className="col-lg-2 col-3 deleteButton">
+                  <div className="form-group">
+                    <div>
+                      <button
+                        type="button"
+                        className="btn btn-danger availableButton"
+                        onClick={() => {
+                          onClickDeleteHendler(bicycle);
+                        }}
+                      >
+                        Delete
+                      </button>
                     </div>
                   </div>
                 </div>

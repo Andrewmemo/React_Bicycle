@@ -81,7 +81,7 @@ const RentedBicycle = ({
     <React.Fragment>
       <div className="row headerRentedRow">
         <div className="col-12">
-          <p className="h3">
+          <p className="h3 headerRentedRowP">
             <span
               role="img"
               aria-label="starFace"
@@ -97,24 +97,22 @@ const RentedBicycle = ({
       {currentBicycles.map((bicycle) => (
         <React.Fragment key={bicycle.id}>
           {bicycle.rented && (
-            <div>
-              <div className="row bg-white rentedRow">
-                <div className="col-10">
-                  {bicycle.name} / {bicycle.type} / {bicycle.rentPrice}{" "}
-                  {checkForPriceChange(bicycle)} /{" "}
-                  <RentedTime key={bicycle.id} bicycle={bicycle} />
-                </div>
-                <div className="col-2 rentedButton">
-                  <div className="form-group">
-                    <div>
-                      <button
-                        type="button"
-                        className="btn btn-danger"
-                        onClick={() => onClickCancelRentHandler(bicycle)}
-                      >
-                        Cancel rent
-                      </button>
-                    </div>
+            <div className="row bg-white rentedRow">
+              <div className="col-lg-10 rentedText">
+                {bicycle.name} / {bicycle.type} / {bicycle.rentPrice}{" "}
+                {checkForPriceChange(bicycle)} /{" "}
+                <RentedTime key={bicycle.id} bicycle={bicycle} />
+              </div>
+              <div className="col-lg-2 rentedButton">
+                <div className="form-group">
+                  <div>
+                    <button
+                      type="button"
+                      className="btn btn-danger rentedButton"
+                      onClick={() => onClickCancelRentHandler(bicycle)}
+                    >
+                      Cancel rent
+                    </button>
                   </div>
                 </div>
               </div>
