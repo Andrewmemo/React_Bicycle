@@ -1,0 +1,20 @@
+.headerRentedRow {
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+
+.rentedRow {
+  height: 6em;
+  line-height: 6em;
+  padding-left: 40px;
+  border: 1px solid #e0e0e0;
+  margin-bottom: 20px;
+}
+
+.rentedButton {
+  text-align: center;
+}
+
+.rentedButton button {
+  padding: 11px 20px;
+}

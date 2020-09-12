@@ -1,0 +1,26 @@
+.inputCreateRow {
+  padding: 20px 0px;
+  padding-left: 40px;
+  background-color: #e9eaee;
+}
+
+.headerCreateRow {
+  margin-bottom: 10px;
+}
+
+.createButton {
+  text-align: center;
+}
+
+.createButton button {
+  padding: 11px 18.35px;
+}
+
+.inputCreate {
+  padding: 23px 10px;
+}
+
+.rentAlert {
+  text-align: center;
+  font-size: 15px;
+}

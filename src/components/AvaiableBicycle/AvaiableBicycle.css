@@ -1,0 +1,25 @@
+.rentButton,
+.deleteButton {
+  text-align: center;
+}
+
+.rentButton button {
+  padding: 11px 44px;
+}
+
+.deleteButton button {
+  padding: 11px 37px;
+}
+
+.headerAvaiableRow {
+  margin-top: 50px;
+  margin-bottom: 10px;
+}
+
+.avaiableRow {
+  margin-bottom: 20px;
+  height: 6em;
+  line-height: 6em;
+  padding-left: 40px;
+  border: 1px solid #e0e0e0;
+}
